@@ -1,66 +1,135 @@
 <template>
-    <div class="section hero">
-        <div class="container">
-            <div class="row">
-                <div class="one-half column">
-                    <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
-                    <a class="button button-primary" href="http://getskeleton.com">Try Skeleton</a>
-                </div>
-                <div class="one-half column phones">
-                    <img class="phone" src="../assets/logo.png">
-                    <img class="phone" src="../assets/logo.png">
-                </div>
+  <div class="section hero" id="top">
+      <div class="container">
+        <div class="row">
+          <div class="one-half column">
+              <h4 class="hero-heading">Попробуйте уникальный набор из 10 чаёв «знакомство» для начинающих</h4>
+              <a class="button button-primary" href="http://getskeleton.com">Купить попробовать</a>
+          </div>
+          <div class="one-half column phones">
+              <img class="phone" src="../assets/logo.png">
+              <img class="phone" src="../assets/logo.png">
+          </div>
+        </div>
+      </div>
+  </div>
+
+<div class="section" id="shues">
+  <div class="container">
+    <h1 class="section-heading">Шу пуэр</h1>
+    <p class="section-description">Шу пуэр — это ферментированные чаи</p>
+    <div class="row">
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Да хун пао</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
+        </div>
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Да хун пао «звёздный»</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
+        </div>
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Дян хун</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Да хун пао</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <div class="section" id="shens">
+      <div class="container">
+        <h1 class="section-heading">Шен пуэр</h1>
+        <p class="section-description">Красные чаи — это, обыкновенно, обжаренные</p>
+        <div class="row">
+            <div class="one-third column item">
+                <img src="../assets/placeholder.png">
+                <h5 class="item-heading">Да хун пао</h5>
+                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+                </p>
+                <button class="button button-primary">Добавить к заказу</button>
+            </div>
+            <div class="one-third column item">
+                <img src="../assets/placeholder.png">
+                <h5 class="item-heading">Да хун пао «звёздный»</h5>
+                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+                </p>
+                <button class="button button-primary">Добавить к заказу</button>
+            </div>
+            <div class="one-third column item">
+                <img src="../assets/placeholder.png">
+                <h5 class="item-heading">Дян хун</h5>
+                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+                </p>
+                <button class="button button-primary">Добавить к заказу</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one-third column item">
+                <img src="../assets/placeholder.png">
+                <h5 class="item-heading">Да хун пао</h5>
+                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+                </p>
+                <button class="button button-primary">Добавить к заказу</button>
             </div>
         </div>
+      </div>
     </div>
 
-    <div class="section values">
-        <div class="container">
-            <div class="row">
-                <div class="one-third column value">
-                    <h2 class="value-multiplier">67%</h2>
-                    <h5 class="value-heading">Purchase Increase</h5>
-                    <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.
-                    </p>
-                </div>
-                <div class="one-third column value">
-                    <h2 class="value-multiplier">90%</h2>
-                    <h5 class="value-heading">Multi-device Users</h5>
-                    <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
-                </div>
-                <div class="one-third column value">
-                    <h2 class="value-multiplier">66%</h2>
-                    <h5 class="value-heading">Sad Users</h5>
-                    <p class="value-description">Percentage of users that are frustrated with page load times.</p>
-                </div>
-            </div>
+<div class="section" id="reds">
+  <div class="container">
+    <h1 class="section-heading">Красные чаи</h1>
+    <p class="section-description">Красные чаи — это, обыкновенно, обжаренные</p>
+    <div class="row">
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Да хун пао</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
+        </div>
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Да хун пао «звёздный»</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
+        </div>
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Дян хун</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-third column item">
+            <img src="../assets/placeholder.png">
+            <h5 class="item-heading">Да хун пао</h5>
+            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
+            </p>
+            <button class="button button-primary">Добавить к заказу</button>
         </div>
     </div>
-
-    <div class="section get-help">
-        <div class="container">
-            <h3 class="section-heading">Need help getting started?</h3>
-            <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If
-                you want to learn more, just visit the documentation!</p>
-            <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
-        </div>
-    </div>
-
-    <div class="section categories">
-        <div class="container">
-            <h3 class="section-heading">Responsive Images</h3>
-            <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest
-                exploring solution to serving different images based on device size.</p>
-            <div class="row">
-                <div class="one-half column category">
-                    <img class="u-max-full-width" src="../assets/placeholder.png">
-                </div>
-                <div class="one-half column category">
-                    <img class="u-max-full-width" src="../assets/placeholder.png">
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -72,7 +141,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
@@ -84,6 +153,7 @@ export default {
 .section {
   padding: 8rem 0 7rem;
   text-align: center;
+  color: #fff;
 }
 .section-heading,
 .section-description {
@@ -92,6 +162,12 @@ export default {
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero {
+  background-image: url('../assets/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
 .phones {
   position: relative;
 }
@@ -103,25 +179,20 @@ export default {
 .phone + .phone {
   display: none;
 }
-
-/* Values
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.values {
-  background-image: url('../assets/values-bg.jpg');
+#shues {
+  background-image: url('../assets/shues-bg.jpg');
   background-size: cover;
-  color: #fff;
-  padding-bottom: 5rem;
+  background-attachment: fixed;
 }
-.value-multiplier {
-  margin-bottom: .5rem;
-  color: #11DFC7;
+#shens {
+  background-image: url('../assets/shens-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
-.value-heading {
-  margin-bottom: .3rem;
-}
-.value-description {
-  opacity: .8;
-  font-weight: 300;
+#reds {
+  background-image: url('../assets/reds-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Help
@@ -130,16 +201,6 @@ export default {
   border-bottom: 1px solid #ddd;
 }
 
-/* Categories
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.categories {
-  background-image: url('../assets/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
-}
-.categories .section-description { 
-  margin-bottom: 4rem;
-}
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
@@ -207,7 +268,7 @@ export default {
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 20rem 0 19rem;
+    padding: 10rem 0 19rem;
   }
   .hero {
     padding: 22rem 0;
