@@ -57,8 +57,8 @@ a:hover, a:active {
   padding-top: 2.3333333333%;
 }
 .logo {
-  padding: 1rem;
   padding-top: 0.3333333333%;
+  margin-bottom: -7.5rem;
 }
 .logo img {
   max-height: 132px;

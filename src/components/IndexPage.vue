@@ -6,9 +6,9 @@
               <h4 class="hero-heading">Попробуйте уникальный набор из 10 чаёв «знакомство» для начинающих</h4>
               <a class="button button-primary" href="http://getskeleton.com">Купить попробовать</a>
           </div>
-          <div class="one-half column phones">
-              <img class="phone" src="../assets/logo.png">
-              <img class="phone" src="../assets/logo.png">
+          <div class="one-half column presents">
+              <img class="present" src="../items/da_hun_pao.jpg">
+              <img class="present" src="../items/da_hun_pao.jpg">
           </div>
         </div>
       </div>
@@ -19,125 +19,55 @@
     <h1 class="section-heading">Шу пуэр</h1>
     <p class="section-description">Шу пуэр — это ферментированные чаи</p>
     <div class="row">
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Да хун пао</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Да хун пао «звёздный»</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Дян хун</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
+      <div v-for="item in $options.items.shues" :key="item" class="one-third column item">
+        <img :src="require('../items/'+item.image)">
+        <h5 class="item-heading">{{ item.name }}</h5>
+        <p class="item-description">{{ item.description }}</p>
+        <h5 class="item-heading">{{ item.price }} руб/шт</h5>
+        <button class="button button-primary">Добавить к заказу</button>
       </div>
-      <div class="row">
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Да хун пао</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
     </div>
   </div>
 </div>
 
-    <div class="section" id="shens">
-      <div class="container">
-        <h1 class="section-heading">Шен пуэр</h1>
-        <p class="section-description">Красные чаи — это, обыкновенно, обжаренные</p>
-        <div class="row">
-            <div class="one-third column item">
-                <img src="../assets/placeholder.png">
-                <h5 class="item-heading">Да хун пао</h5>
-                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-                </p>
-                <button class="button button-primary">Добавить к заказу</button>
-            </div>
-            <div class="one-third column item">
-                <img src="../assets/placeholder.png">
-                <h5 class="item-heading">Да хун пао «звёздный»</h5>
-                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-                </p>
-                <button class="button button-primary">Добавить к заказу</button>
-            </div>
-            <div class="one-third column item">
-                <img src="../assets/placeholder.png">
-                <h5 class="item-heading">Дян хун</h5>
-                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-                </p>
-                <button class="button button-primary">Добавить к заказу</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="one-third column item">
-                <img src="../assets/placeholder.png">
-                <h5 class="item-heading">Да хун пао</h5>
-                <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-                </p>
-                <button class="button button-primary">Добавить к заказу</button>
-            </div>
+  <div class="section" id="shens">
+    <div class="container">
+      <h1 class="section-heading">Шен пуэр</h1>
+      <p class="section-description">Шен пуэр — это ферментированные зелёные чаи</p>
+      <div class="row">
+        <div v-for="item in $options.items.shens" :key="item" class="one-third column item">
+          <img :src="require('../items/'+item.image)">
+          <h5 class="item-heading">{{ item.name }}</h5>
+          <p class="item-description">{{ item.description }}</p>
+          <h5 class="item-heading">{{ item.price }} руб/шт</h5>
+          <button class="button button-primary">Добавить к заказу</button>
         </div>
       </div>
-    </div>
+  </div>
+</div>
 
 <div class="section" id="reds">
   <div class="container">
     <h1 class="section-heading">Красные чаи</h1>
     <p class="section-description">Красные чаи — это, обыкновенно, обжаренные</p>
     <div class="row">
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Да хун пао</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Да хун пао «звёздный»</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Дян хун</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
+      <div v-for="item in $options.items.reds" :key="item" class="one-third column item">
+        <img :src="require('../items/'+item.image)">
+        <h5 class="item-heading">{{ item.name }}</h5>
+        <p class="item-description">{{ item.description }}</p>
+        <h5 class="item-heading">{{ item.price }} руб/шт</h5>
+        <button class="button button-primary">Добавить к заказу</button>
       </div>
-      <div class="row">
-        <div class="one-third column item">
-            <img src="../assets/placeholder.png">
-            <h5 class="item-heading">Да хун пао</h5>
-            <p class="item-description">Percentage of users more likely to purchase on mobile friendly site.
-            </p>
-            <button class="button button-primary">Добавить к заказу</button>
-        </div>
     </div>
   </div>
 </div>
 </template>
 
 <script>
+import ITEMS from '../items/data.json';
 export default {
     name: 'IndexPage',
-    props: {
-        msg: String
-    }
+    items: ITEMS
 }
 </script>
 
@@ -168,15 +98,15 @@ export default {
   background-size: cover;
   background-attachment: fixed;
 }
-.phones {
+.presents {
   position: relative;
 }
-.phone {
+.present {
   position: relative;
   max-width: 80%;
   margin: 3rem auto -12rem;
 }
-.phone + .phone {
+.present + .present {
   display: none;
 }
 #shues {
@@ -194,7 +124,9 @@ export default {
   background-size: cover;
   background-attachment: fixed;
 }
-
+.item:nth-of-type(3n+1) {
+  margin-left: 0;
+}
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
@@ -212,14 +144,14 @@ export default {
     text-align: left;
     height: 165px;
   }
-  .phone {
+  .present {
     position: absolute;
     top: -7rem;
     right: 3rem;
     max-height: 362px;
     z-index: 3;
   }
-  .phone + .phone {
+  .present + .present {
     top: -6rem;
     display: block;
     max-width: 73.8%;
@@ -251,12 +183,12 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
-  .phone {
+  .present {
     top: -14rem;
     right: 5rem;
     max-height: 510px;
   }
-  .phone + .phone {
+  .present + .present {
     top: -12rem;
     max-height: 472px;
   }
@@ -276,11 +208,11 @@ export default {
   .hero-heading {
     font-size: 3.0rem;
   }
-  .phone {
+  .present {
     top: -16rem;
     max-height: 615px;
   }
-  .phone + .phone {
+  .present + .present {
     top: -14rem;
     max-height: 570px;
   }
