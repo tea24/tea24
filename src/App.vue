@@ -1,5 +1,5 @@
 <template>
-  <HeaderItem msg="Welcome to Your Vue.js App"/>
+  <HeaderItem/>
   <IndexPage/>
 </template>
 
