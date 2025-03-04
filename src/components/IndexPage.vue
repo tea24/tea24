@@ -24,7 +24,7 @@
         <h5 class="item-heading">{{ item.name }}</h5>
         <p class="item-description">{{ item.description }}</p>
         <h5 class="item-heading">{{ item.price }} руб/шт</h5>
-        <button class="button button-primary">Добавить к заказу</button>
+        <button class="button button-primary" @click="store.cart.push(item)">Добавить к заказу</button>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@
           <h5 class="item-heading">{{ item.name }}</h5>
           <p class="item-description">{{ item.description }}</p>
           <h5 class="item-heading">{{ item.price }} руб/шт</h5>
-          <button class="button button-primary">Добавить к заказу</button>
+          <button class="button button-primary" @click="store.cart.push(item)">Добавить к заказу</button>
         </div>
       </div>
   </div>
@@ -56,7 +56,7 @@
         <h5 class="item-heading">{{ item.name }}</h5>
         <p class="item-description">{{ item.description }}</p>
         <h5 class="item-heading">{{ item.price }} руб/шт</h5>
-        <button class="button button-primary">Добавить к заказу</button>
+        <button class="button button-primary" @click="store.cart.push(item)">Добавить к заказу</button>
       </div>
     </div>
   </div>
@@ -64,11 +64,17 @@
 </template>
 
 <script>
-import ITEMS from '../items/data.json';
-export default {
-    name: 'IndexPage',
-    items: ITEMS
-}
+import { defineComponent } from 'vue';
+import { store } from '../store.js';
+export default defineComponent({
+  setup() {
+    return {
+      store
+    }
+  },
+  name: 'IndexPage',
+  items: store.items
+})
 </script>
 
 <style scoped>

@@ -1,17 +1,20 @@
 <template>
   <HeaderItem/>
   <IndexPage/>
+  <ShoppingCart/>
 </template>
 
 <script>
 import HeaderItem from './components/HeaderItem.vue'
 import IndexPage from './components/IndexPage.vue'
+import ShoppingCart from './components/ShoppingCart.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderItem,
-    IndexPage
+    IndexPage,
+    ShoppingCart
   }
 }
 </script>
