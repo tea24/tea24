@@ -1,7 +1,7 @@
 <template>
     <button class="shopping-cart-widget" v-if="items.length == 0 || !displayCart" @click="displayCart = true">Корзина</button>
     <div class="shopping-cart" v-if="items.length > 0 && displayCart">
-        <div class="shopping-cart-header">Корзина <button @click="displayCart = false">_</button></div>
+        <div class="shopping-cart-header">Корзина ({{ items.reduce((acc, x) => acc + x.price, 0) }}) руб <button @click="displayCart = false">_</button></div>
         <div class="shopping-cart-content">
             <div class="shopping-cart-item" v-for="item in items" :key="item">
                 <img :src="require('../items/'+item.image)">
