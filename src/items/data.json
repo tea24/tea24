@@ -1,4 +1,24 @@
 {
+    "special": [
+        {
+            "name": "Да хун пао",
+            "description": "Percentage of users more likely to purchase on mobile friendly site.",
+            "price": 100,
+            "image": "da_hun_pao.jpg"
+        },
+        {
+            "name": "Да хун пао «звёздный»",
+            "description": "Percentage of users more likely to purchase on mobile friendly site.",
+            "price": 100,
+            "image": "da_hun_pao.jpg"
+        },
+        {
+            "name": "Дян хун",
+            "description": "Percentage of users more likely to purchase on mobile friendly site.",
+            "price": 100,
+            "image": "da_hun_pao.jpg"
+        }
+    ],
     "reds": [
         {
             "name": "Да хун пао",

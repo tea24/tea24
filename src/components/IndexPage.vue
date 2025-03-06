@@ -4,7 +4,7 @@
         <div class="row">
           <div class="one-half column">
               <h4 class="hero-heading">Попробуйте уникальный набор из 10 чаёв «знакомство» для начинающих</h4>
-              <a class="button button-primary" href="http://getskeleton.com">Купить попробовать</a>
+              <button class="button button-primary" @click="store.cart.push(...$options.items.special)">Купить попробовать</button>
           </div>
           <div class="one-half column presents">
               <img class="present" src="../items/da_hun_pao.jpg">
