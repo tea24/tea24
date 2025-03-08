@@ -1,13 +1,16 @@
 <template>
-    <button class="shopping-cart-widget" v-if="items.length == 0 || !displayCart" @click="displayCart = true">Корзина</button>
-    <div class="shopping-cart" v-if="items.length > 0 && displayCart">
-        <div class="shopping-cart-header">Корзина ({{ items.reduce((acc, x) => acc + x.price, 0) }}) руб <button @click="displayCart = false">_</button></div>
-        <div class="shopping-cart-content">
+    <button class="shopping-cart-widget" v-if="page == Pages.NONE" @click="page = Pages.CART">Корзина ^</button>
+    <div class="shopping-cart" v-if="page == Pages.CART">
+        <div class="shopping-cart-header">Корзина ({{ items.reduce((acc, x) => acc + x.price, 0) }}) руб <button @click="page = Pages.NONE">_</button></div>
+        <div class="shopping-cart-content" v-if="items.length > 0">
             <div class="shopping-cart-item" v-for="item in items" :key="item">
                 <img :src="require('../items/'+item.image)">
                 <h5 class="item-heading">{{ item.name }}</h5>
                 <button @click="store.cart.splice(store.cart.indexOf(item), 1)">Удалить</button>
             </div>
+        </div>
+        <div class="shopping-cart-content" v-else>
+            <h5>Нет товаров в корзине</h5>
         </div>
     </div>
 </template>
@@ -16,10 +19,17 @@
 import { defineComponent } from 'vue';
 import { store } from '../store.js'
 
+const Pages = {
+    NONE: 0,
+    CART: 1,
+    ORDER: 2
+}
+
 export default defineComponent({
     data() {
         return {
-            displayCart: false
+            page: Pages.NONE,
+            Pages
         }
     },
     setup() {
