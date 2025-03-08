@@ -48,6 +48,7 @@ export default defineComponent({
     overflow-y: scroll;
     bottom: 0;
     right: 0;
+    z-index: 5;
     width: 300px;
     height: calc(100% - 11rem);
     background-color: #fff;
@@ -60,5 +61,12 @@ export default defineComponent({
 .shopping-cart img {
     width: 100px;
     height: 100px;
+}
+
+/* Smaller than 550 */
+@media (max-width: 550px) {
+    .shopping-cart {
+        width: calc(100% - 4rem);
+    }
 }
 </style>
