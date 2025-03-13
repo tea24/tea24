@@ -1,5 +1,5 @@
 <template>
-    <button class="shopping-cart-widget" v-if="page == Pages.NONE" @click="page = Pages.CART">Корзина ^</button>
+    <button class="shopping-cart-widget" v-if="page == Pages.NONE" @click="page = Pages.CART">Корзина ({{ items.reduce((acc, x) => acc + x.price, 0) }}) руб</button>
     <div class="shopping-cart" v-if="page == Pages.CART">
         <div class="shopping-cart-header">Корзина ({{ items.reduce((acc, x) => acc + x.price, 0) }}) руб <button @click="page = Pages.NONE">_</button></div>
         <div class="shopping-cart-content" v-if="items.length > 0">
@@ -28,7 +28,6 @@
                 <input type="text" placeholder="@nickname или +79996662010" v-model="form.phone">
                 <button @click="sendOrder">Send</button>
             </form>
-            <p>{{ form.phone }}</p>
         </div>
         <div class="shopping-cart-content" v-else>
             <h5>Нет товаров в корзине</h5>
@@ -91,10 +90,11 @@ export default defineComponent({
 <style scoped>
 .shopping-cart-widget {
     background-color: #fff;
-    width: 100px;
+    width: 300px;
     position: fixed;
     bottom: 0;
     right: 0;
+    margin: 1rem;
 }
 .shopping-cart {
     float: left;
@@ -109,8 +109,17 @@ export default defineComponent({
     padding: 1rem;
     margin: 1rem;
 }
+.shopping-cart-content {
+    display: flexbox;
+}
 .shopping-cart-item {
+    display: inline-flex;
     float: left;
+    margin-bottom: 1rem;
+    align-items: flex-end;
+}
+.item-heading {
+    font-size: 1.2em;
 }
 .shopping-cart img {
     width: 100px;
