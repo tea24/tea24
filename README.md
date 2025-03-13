@@ -22,3 +22,19 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Development
+
+### Components
+```
++ Template
++ Logo
++ Item(s)
++ > Item's photo
++ > Item's about
++ Popup
++ Telegram bot sender
+- About
+- Delivery
+```
